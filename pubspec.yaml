@@ -1,0 +1,19 @@
+name: vc_related_apps
+description: Internal package used to get related apps made by Vicente Caycedo.
+version: 1.0.0
+author: Vicente Caycedo
+homepage: https://www.vicentecaycedo.com
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^0.12.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
