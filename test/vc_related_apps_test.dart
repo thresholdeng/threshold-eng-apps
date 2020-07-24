@@ -11,7 +11,7 @@ void main() {
       title: 'Phase 10 Score Keeper',
       description: 'The ultimate companion app for the Phase 10 card game.'
           ' Easily keep track of phases and points!',
-      iconPath: '/icons/p10sk.png',
+      iconUrl: 'https://vicentecaycedo.com/apps/icons/p10sk.png',
       appStore: 'https://apps.apple.com/us/app/id1257116642',
       playStore: 'https://play.google.com/store/apps/details?'
           'id=com.vicentecaycedo.phase10scorekeeper&hl=en_US',
@@ -21,7 +21,7 @@ void main() {
       title: 'Clue Detective Notebook',
       description: 'The ultimate companion app for Clue - the Classic Murder '
           'Mystery Game.',
-      iconPath: '/icons/cdn.png',
+      iconUrl: 'https://vicentecaycedo.com/apps/icons/cdn.png',
       appStore: 'https://apps.apple.com/us/app/clue-detective-notebook'
           '/id1330273449',
       playStore: 'https://play.google.com/store/apps/details?id='

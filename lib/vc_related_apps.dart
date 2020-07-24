@@ -7,13 +7,14 @@ import 'package:http/http.dart' as http;
 
 import 'src/app.dart';
 import 'src/key.dart';
-import 'src/url.dart';
 
 export 'src/app.dart';
 
+final _appsJsonUrl = 'https://www.vicentecaycedo.com/apps.json';
+
 Future<UnmodifiableListView<App>> loadRelatedApps() async {
   List<App> apps = [];
-  http.Response response = await http.get('$rootUrl$appJsonPath');
+  http.Response response = await http.get(_appsJsonUrl);
   if (response.statusCode == 200) {
     final appsData = jsonDecode(response.body)[appsKey];
     for (final appJson in appsData) {

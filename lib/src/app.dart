@@ -4,13 +4,12 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 
 import 'key.dart';
-import 'url.dart';
 
 class App {
   final String id;
   final String title;
   final String description;
-  final String iconPath;
+  final String iconUrl;
   final String appStore;
   final String playStore;
 
@@ -18,7 +17,7 @@ class App {
     @required this.id,
     @required this.title,
     @required this.description,
-    @required this.iconPath,
+    @required this.iconUrl,
     @required this.appStore,
     @required this.playStore,
   });
@@ -30,12 +29,10 @@ class App {
           id: decodedJson[idKey],
           title: decodedJson[titleKey],
           description: decodedJson[descriptionKey],
-          iconPath: decodedJson[iconKey],
+          iconUrl: decodedJson[iconKey],
           appStore: decodedJson[appStoreKey],
           playStore: decodedJson[playStoreKey],
         );
-
-  Future<Image> get icon async => Image.network('$rootUrl$iconPath');
 
   String get storeLink {
     if (Platform.isIOS) {
@@ -55,7 +52,7 @@ class App {
         other.id == id &&
         other.title == title &&
         other.description == description &&
-        other.iconPath == iconPath &&
+        other.iconUrl == iconUrl &&
         other.appStore == appStore &&
         other.playStore == playStore;
   }

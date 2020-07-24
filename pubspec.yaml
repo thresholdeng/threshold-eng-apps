@@ -1,6 +1,6 @@
 name: vc_related_apps
 description: Internal package used to get related apps made by Vicente Caycedo.
-version: 1.0.0
+version: 1.0.1
 author: Vicente Caycedo
 homepage: https://www.vicentecaycedo.com
 
