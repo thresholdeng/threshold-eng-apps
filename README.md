@@ -1,2 +1,2 @@
 # VC Related Apps
-> Internal package used to get related apps made by Vicente Caycedo.
+> Dart package used to get information about apps made by Vicente Caycedo.
