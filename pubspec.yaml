@@ -1,8 +1,8 @@
-name: vc_related_apps
-description: Internal package used to get related apps made by Vicente Caycedo.
-version: 1.0.1
-author: Vicente Caycedo
-homepage: https://www.vicentecaycedo.com
+name: threshold_eng_apps
+description: A Flutter plugin for getting information about apps made by Threshold Engineering.
+version: 2.0.0
+author: Threshold Engineering
+homepage: https://www.thresholdeng.com
 
 environment:
   sdk: ">=2.7.0 <3.0.0"

@@ -1,4 +1,4 @@
-library vc_related_apps;
+library threshold_eng_apps;
 
 import 'dart:collection';
 import 'dart:convert';
@@ -10,9 +10,9 @@ import 'src/key.dart';
 
 export 'src/app.dart';
 
-final _appsJsonUrl = 'https://www.vicentecaycedo.com/apps.json';
+final _appsJsonUrl = 'https://api.thresholdeng.com/apps';
 
-Future<UnmodifiableListView<App>> loadRelatedApps() async {
+Future<UnmodifiableListView<App>> loadTEApps() async {
   List<App> apps = [];
   http.Response response = await http.get(_appsJsonUrl);
   if (response.statusCode == 200) {
