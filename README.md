@@ -1,2 +1,2 @@
-# VC Related Apps
-> Dart package used to get information about apps made by Vicente Caycedo.
+# Threshold Engineering Apps
+> A Flutter plugin for getting information about apps made by Threshold Engineering.
