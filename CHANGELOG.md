@@ -1,3 +1,7 @@
+## [2.0.0]
+* **Breaking change:** Rename LoadRelatedApps to LoadTEApps
+* Using new Threshold Engineering API.
+
 ## [1.0.1]
 
 * **Breaking change:** Removed app icon image getter.
