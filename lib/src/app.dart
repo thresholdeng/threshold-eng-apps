@@ -59,4 +59,17 @@ class App {
 
   @override
   int get hashCode => id.hashCode;
+
+  @override
+  String toString() {
+    return '''App {
+      id: $id,
+      title: $title,
+      description: $description,
+      iconUrl: $iconUrl,
+      appStore: $appStore,
+      playStore: $playStore,
+    }
+    ''';
+  }
 }
