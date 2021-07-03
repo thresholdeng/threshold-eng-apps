@@ -1,17 +1,16 @@
 import 'dart:convert';
 import 'dart:io';
 
-import 'package:flutter/material.dart';
 import 'package:threshold_eng_apps/src/key.dart';
 
 class App {
   App({
-    @required this.id,
-    @required this.title,
-    @required this.description,
-    @required this.iconUrl,
-    @required this.appStore,
-    @required this.playStore,
+    required this.id,
+    required this.title,
+    required this.description,
+    required this.iconUrl,
+    required this.appStore,
+    required this.playStore,
   });
 
   App.fromJson(dynamic json) : this.fromDecodedJson(jsonDecode(json));
@@ -42,7 +41,7 @@ class App {
       return playStore;
     }
 
-    throw UnsupportedError('Unsupported Platform');
+    throw UnsupportedError('Unsupported platform');
   }
 
   @override

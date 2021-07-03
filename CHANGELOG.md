@@ -1,4 +1,9 @@
+## [3.0.0]
+
+* Migrate to null-safety.
+
 ## [2.0.0]
+
 * **Breaking change:** Rename LoadRelatedApps to LoadTEApps
 * Using new Threshold Engineering API.
 
