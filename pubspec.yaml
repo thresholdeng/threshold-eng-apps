@@ -1,7 +1,7 @@
 name: threshold_eng_apps
-description: A Flutter plugin for getting information about apps made by Threshold Engineering.
+description: A Flutter plugin for getting information about apps made by Threshold Eng Corp.
 version: 2.0.0
-author: Threshold Engineering
+author: Threshold Eng Corp
 homepage: https://www.thresholdeng.com
 
 environment:
@@ -10,9 +10,10 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  http: ^0.12.2
+  http: ^0.13.3
 
 dev_dependencies:
+  flutter_lints: ^1.0.3
   flutter_test:
     sdk: flutter
 

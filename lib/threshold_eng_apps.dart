@@ -4,17 +4,15 @@ import 'dart:collection';
 import 'dart:convert';
 
 import 'package:http/http.dart' as http;
-
-import 'src/app.dart';
-import 'src/key.dart';
+import 'package:threshold_eng_apps/src/app.dart';
+import 'package:threshold_eng_apps/src/key.dart';
 
 export 'src/app.dart';
 
-final _appsJsonUrl = 'https://api.thresholdeng.com/apps';
-
 Future<UnmodifiableListView<App>> loadTEApps() async {
-  List<App> apps = [];
-  http.Response response = await http.get(_appsJsonUrl);
+  final List<App> apps = [];
+  final appsUrl = Uri.https('api.thresholdeng.com', 'apps');
+  final response = await http.get(appsUrl);
   if (response.statusCode == 200) {
     final appsData = jsonDecode(response.body)[appsKey];
     for (final appJson in appsData) {

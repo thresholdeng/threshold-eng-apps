@@ -2,10 +2,10 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:threshold_eng_apps/threshold_eng_apps.dart';
 
 void main() {
-  test('Threshold Engineering apps are correctly downloaded', () async {
-    // Test depends on current JSON hosted online.
-    // Not worth the trouble of mocking data, etc.
-    // Test last updated: 11/29/20.
+  test('Threshold Eng apps are correctly retrieved', () async {
+    // This test depends on the data currently hosted online.
+    // It's not worth the trouble of mocking this data, etc.
+    // Test last updated: 07/03/21.
     final p10sk = App(
       id: 'com.vicentecaycedo.phase10scorekeeper',
       title: 'Phase 10 Score Keeper',

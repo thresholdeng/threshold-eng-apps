@@ -2,17 +2,9 @@ import 'dart:convert';
 import 'dart:io';
 
 import 'package:flutter/material.dart';
-
-import 'key.dart';
+import 'package:threshold_eng_apps/src/key.dart';
 
 class App {
-  final String id;
-  final String title;
-  final String description;
-  final String iconUrl;
-  final String appStore;
-  final String playStore;
-
   App({
     @required this.id,
     @required this.title,
@@ -34,6 +26,13 @@ class App {
           playStore: decodedJson[playStoreKey],
         );
 
+  final String id;
+  final String title;
+  final String description;
+  final String iconUrl;
+  final String appStore;
+  final String playStore;
+
   String get storeLink {
     if (Platform.isIOS) {
       return appStore;
@@ -43,7 +42,7 @@ class App {
       return playStore;
     }
 
-    throw new UnsupportedError('Unsupported Platform');
+    throw UnsupportedError('Unsupported Platform');
   }
 
   @override
@@ -62,14 +61,13 @@ class App {
 
   @override
   String toString() {
-    return '''App {
-      id: $id,
-      title: $title,
-      description: $description,
-      iconUrl: $iconUrl,
-      appStore: $appStore,
-      playStore: $playStore,
-    }
-    ''';
+    return 'App {\n'
+        '  id: $id,\n'
+        '  title: $title,\n'
+        '  description: $description,\n'
+        '  iconUrl: $iconUrl,\n'
+        '  appStore: $appStore,\n'
+        '  playStore: $playStore,\n'
+        '}';
   }
 }
